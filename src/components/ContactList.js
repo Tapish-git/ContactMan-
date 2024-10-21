@@ -7,12 +7,16 @@ const ContactList = ({ contacts }) => {
             <div>
                 <h3>{contacts.length} contacts uploaded successfully!</h3>
                 <ul>
-                    
+                    {contacts.map((contact, idx) => (
+                        <li key={idx}>
+                            {contact.name} - {contact.enail} - {contact.phone}
+                        </li>
+                    ))}
                 </ul>
             </div>
         )}
     </div>
-  )
-}
+  );
+};
 
-export default ContactList
+export default ContactList;

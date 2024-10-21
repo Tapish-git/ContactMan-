@@ -17,4 +17,4 @@ const ValidationErrors = ({ errors }) => {
   );
 };
 
-export default ValidationErrors
+export default ValidationErrors;
