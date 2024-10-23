@@ -9,7 +9,7 @@ const ContactList = ({ contacts }) => {
                 <ul>
                     {contacts.map((contact, idx) => (
                         <li key={idx}>
-                            {contact.name} - {contact.enail} - {contact.phone}
+                            {contact.name} - {contact.email} - {contact.phone}
                         </li>
                     ))}
                 </ul>
